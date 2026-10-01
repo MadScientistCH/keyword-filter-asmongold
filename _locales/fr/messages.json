@@ -1,0 +1,19 @@
+{
+  "extName": { "message": "Threads Keyword Filter" },
+  "extDescription": { "message": "Masque les publications sur Threads qui mentionnent les mots-clés de votre choix. Livré avec un préréglage pour Asmongold et la guilde Olympus." },
+  "hiddenPost": { "message": "Publication masquée (correspondance : « $MATCH$ »)", "placeholders": { "match": { "content": "$1" } } },
+  "showAnyway": { "message": "Afficher quand même" },
+  "profileBlocked": { "message": "Le profil @$HANDLE$ est bloqué par Threads Keyword Filter.", "placeholders": { "handle": { "content": "$1" } } },
+  "goBack": { "message": "Retour" },
+  "optKeywordsTitle": { "message": "Mots-clés (un par ligne)" },
+  "optKeywordsHint": { "message": "Insensible à la casse. Vérifie le texte des publications, les noms d'utilisateur, les liens et le texte alternatif des images. Le mot seul « olympus » est volontairement absent (appareils photo, montagne, etc.). Ajoutez-le pour un blocage plus large." },
+  "optWholeWord": { "message": "Mots entiers uniquement" },
+  "optBlockProfiles": { "message": "Couvrir les pages de profil dont l'identifiant correspond" },
+  "optDisplayTitle": { "message": "Affichage" },
+  "optModePlaceholder": { "message": "Réduire avec un avis (cliquer pour afficher)" },
+  "optModeHide": { "message": "Supprimer complètement" },
+  "optSave": { "message": "Enregistrer" },
+  "optReset": { "message": "Rétablir les valeurs par défaut" },
+  "optSaved": { "message": "Enregistré ✓" },
+  "optResetDone": { "message": "Valeurs par défaut rétablies ✓" }
+}

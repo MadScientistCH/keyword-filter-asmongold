@@ -1,0 +1,19 @@
+{
+  "extName": { "message": "Threads Stichwort-Filter" },
+  "extDescription": { "message": "Blendet Beiträge auf Threads aus, die von dir gewählte Stichwörter erwähnen. Mit Voreinstellung für Asmongold und die Olympus-Gilde." },
+  "hiddenPost": { "message": "Beitrag ausgeblendet (Treffer: „$MATCH$“)", "placeholders": { "match": { "content": "$1" } } },
+  "showAnyway": { "message": "Trotzdem anzeigen" },
+  "profileBlocked": { "message": "Das Profil @$HANDLE$ ist durch den Threads Stichwort-Filter blockiert.", "placeholders": { "handle": { "content": "$1" } } },
+  "goBack": { "message": "Zurück" },
+  "optKeywordsTitle": { "message": "Stichwörter (eins pro Zeile)" },
+  "optKeywordsHint": { "message": "Gross-/Kleinschreibung egal. Geprüft werden Text, Benutzernamen, Links und Bild-Alt-Texte. Das reine Wort „olympus“ ist absichtlich nicht drin (Kameras, Berg usw.) – bei Bedarf hinzufügen." },
+  "optWholeWord": { "message": "Nur ganze Wörter" },
+  "optBlockProfiles": { "message": "Passende Profilseiten abdecken" },
+  "optDisplayTitle": { "message": "Darstellung" },
+  "optModePlaceholder": { "message": "Einklappen mit Hinweis (anklickbar)" },
+  "optModeHide": { "message": "Komplett ausblenden" },
+  "optSave": { "message": "Speichern" },
+  "optReset": { "message": "Standard wiederherstellen" },
+  "optSaved": { "message": "Gespeichert ✓" },
+  "optResetDone": { "message": "Zurückgesetzt ✓" }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 14px/1.5 system-ui, sans-serif; padding: 12px; min-width: 380px; }
+    textarea { width: 100%; height: 180px; font: 13px monospace; box-sizing: border-box; }
+    label { display: block; margin: 6px 0; }
+    .hint { color: #777; font-size: 12px; }
+    #status { color: green; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <h3 data-i18n="optKeywordsTitle"></h3>
+  <textarea id="keywords"></textarea>
+  <p class="hint" data-i18n="optKeywordsHint"></p>
+
+  <label><input type="checkbox" id="wholeWord"> <span data-i18n="optWholeWord"></span></label>
+  <label><input type="checkbox" id="blockProfiles"> <span data-i18n="optBlockProfiles"></span></label>
+
+  <h3 data-i18n="optDisplayTitle"></h3>
+  <label><input type="radio" name="mode" value="placeholder"> <span data-i18n="optModePlaceholder"></span></label>
+  <label><input type="radio" name="mode" value="hide"> <span data-i18n="optModeHide"></span></label>
+
+  <p>
+    <button id="save" data-i18n="optSave"></button>
+    <button id="reset" data-i18n="optReset"></button>
+    <span id="status"></span>
+  </p>
+
+  <script src="defaults.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
