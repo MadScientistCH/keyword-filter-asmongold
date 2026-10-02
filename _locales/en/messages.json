@@ -1,0 +1,19 @@
+{
+  "extName": { "message": "Keyword Filter for Threads" },
+  "extDescription": { "message": "Hides posts on Threads that mention keywords you choose. Comes with a preset for Asmongold and the Olympus guild. Unofficial; not affiliated with Meta or any named brand." },
+  "hiddenPost": { "message": "Post hidden (matched: \"$MATCH$\")", "placeholders": { "match": { "content": "$1" } } },
+  "showAnyway": { "message": "Show anyway" },
+  "profileBlocked": { "message": "The profile @$HANDLE$ is blocked by Keyword Filter for Threads.", "placeholders": { "handle": { "content": "$1" } } },
+  "goBack": { "message": "Go back" },
+  "optKeywordsTitle": { "message": "Keywords (one per line)" },
+  "optKeywordsHint": { "message": "Case-insensitive. Checks post text, usernames, links and image alt text. The bare word \"olympus\" is left out on purpose (cameras, the mountain, etc.). Add it if you want broader blocking." },
+  "optWholeWord": { "message": "Match whole words only" },
+  "optBlockProfiles": { "message": "Cover profile pages whose handle matches" },
+  "optDisplayTitle": { "message": "Display" },
+  "optModePlaceholder": { "message": "Collapse with a notice (click to reveal)" },
+  "optModeHide": { "message": "Remove completely" },
+  "optSave": { "message": "Save" },
+  "optReset": { "message": "Restore defaults" },
+  "optSaved": { "message": "Saved ✓" },
+  "optResetDone": { "message": "Defaults restored ✓" }
+}

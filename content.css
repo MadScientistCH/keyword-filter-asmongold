@@ -1,0 +1,55 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+.tf-hidden {
+  display: none !important;
+}
+
+.tf-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 6px 16px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font: 13px/1.4 system-ui, sans-serif;
+  color: #777;
+  background: rgba(127, 127, 127, 0.12);
+}
+
+.tf-mode-hide .tf-placeholder {
+  display: none !important;
+}
+
+.tf-placeholder button,
+#tf-profile-block button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid rgba(127, 127, 127, 0.4);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  padding: 4px 10px;
+}
+
+#tf-profile-block {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(16, 16, 16, 0.96);
+  color: #eee;
+  font: 15px/1.5 system-ui, sans-serif;
+}
+
+#tf-profile-block div {
+  text-align: center;
+}
+
+#tf-profile-block button {
+  margin: 0 6px;
+  padding: 6px 14px;
+}
