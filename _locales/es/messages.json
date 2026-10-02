@@ -1,6 +1,6 @@
 {
   "extName": { "message": "Keyword Filter for Threads" },
-  "extDescription": { "message": "Oculta las publicaciones de Threads que mencionan las palabras clave que elijas. Incluye una configuración predefinida para Asmongold y el gremio Olympus. No oficial; sin afiliación con Meta ni marcas citadas." },
+  "extDescription": { "message": "Oculta publicaciones de Threads con las palabras clave que elijas. Lista editable, solo local. No oficial; sin afiliación con Meta." },
   "hiddenPost": { "message": "Publicación oculta (coincidencia: «$MATCH$»)", "placeholders": { "match": { "content": "$1" } } },
   "showAnyway": { "message": "Mostrar de todos modos" },
   "profileBlocked": { "message": "El perfil @$HANDLE$ está bloqueado por Keyword Filter for Threads.", "placeholders": { "handle": { "content": "$1" } } },

@@ -1,6 +1,6 @@
 {
   "extName": { "message": "Keyword Filter for Threads" },
-  "extDescription": { "message": "Hides posts on Threads that mention keywords you choose. Comes with a preset for Asmongold and the Olympus guild. Unofficial; not affiliated with Meta or any named brand." },
+  "extDescription": { "message": "Hides Threads posts that mention keywords you choose. Editable list, local only. Unofficial; not affiliated with Meta." },
   "hiddenPost": { "message": "Post hidden (matched: \"$MATCH$\")", "placeholders": { "match": { "content": "$1" } } },
   "showAnyway": { "message": "Show anyway" },
   "profileBlocked": { "message": "The profile @$HANDLE$ is blocked by Keyword Filter for Threads.", "placeholders": { "handle": { "content": "$1" } } },

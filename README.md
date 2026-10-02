@@ -1,6 +1,6 @@
 # Keyword Filter for Threads
 
-A small Firefox (desktop and Android) extension that hides posts on
+A small Firefox (desktop and Android) and Chrome extension that hides posts on
 [Threads](https://www.threads.com) mentioning keywords you choose. It ships with a
 preset list, but the list is fully editable.
 
@@ -23,6 +23,12 @@ makes no network requests, and only uses the `storage` permission to save your s
 2. Click **Load Temporary Add-on…** and select `manifest.json`.
 
 Or package with [`web-ext`](https://github.com/mozilla/web-ext): `web-ext build`.
+
+### Chrome
+
+Open `chrome://extensions`, enable Developer mode, **Load unpacked** and select
+`dist/chrome` after running `./scripts/build.sh`. The same script produces the
+store-ready `dist/keyword-filter-chrome.zip`. Store listing notes: `store/listing.md`.
 
 ## Settings
 

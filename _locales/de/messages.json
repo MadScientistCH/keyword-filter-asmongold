@@ -1,6 +1,6 @@
 {
   "extName": { "message": "Stichwort-Filter für Threads" },
-  "extDescription": { "message": "Blendet Beiträge auf Threads aus, die von dir gewählte Stichwörter erwähnen. Mit Voreinstellung für Asmongold und die Olympus-Gilde. Inoffiziell; nicht mit Meta oder genannten Marken verbunden." },
+  "extDescription": { "message": "Blendet Threads-Beiträge mit deinen Stichwörtern aus. Editierbare Liste, rein lokal. Inoffiziell; nicht mit Meta verbunden." },
   "hiddenPost": { "message": "Beitrag ausgeblendet (Treffer: „$MATCH$“)", "placeholders": { "match": { "content": "$1" } } },
   "showAnyway": { "message": "Trotzdem anzeigen" },
   "profileBlocked": { "message": "Das Profil @$HANDLE$ ist durch den „Stichwort-Filter für Threads“ blockiert.", "placeholders": { "handle": { "content": "$1" } } },
