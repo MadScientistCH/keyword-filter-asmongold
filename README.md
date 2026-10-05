@@ -24,6 +24,28 @@ makes no network requests, and only uses the `storage` permission to save your s
 
 Or package with [`web-ext`](https://github.com/mozilla/web-ext): `web-ext build`.
 
+## Releasing
+
+Pushing a tag like `v1.0.1` triggers `.github/workflows/release.yml`, which
+
+1. builds one zip each for Firefox, Chrome, Edge and Opera (`scripts/build.sh`; the
+   version is taken from the tag, Chromium builds drop the Gecko-only manifest keys),
+2. lints the Firefox package with `web-ext lint`,
+3. attaches all zips to a GitHub Release,
+4. submits to the stores whose secrets are configured (otherwise that job is skipped):
+
+| Store | Repository secrets |
+| --- | --- |
+| Firefox (AMO) | `AMO_JWT_ISSUER`, `AMO_JWT_SECRET` |
+| Chrome Web Store | `CWS_EXTENSION_ID`, `CWS_CLIENT_ID`, `CWS_CLIENT_SECRET`, `CWS_REFRESH_TOKEN` |
+| Edge Add-ons | `EDGE_PRODUCT_ID`, `EDGE_CLIENT_ID`, `EDGE_API_KEY` |
+| Opera Add-ons | none – Opera has no upload API; upload the `-opera` zip manually |
+
+The first submission to every store has to be done manually (listing, screenshots,
+privacy answers); afterwards the pipeline publishes updates.
+
+Local build: `scripts/build.sh` (needs `jq` and `zip`), output in `dist/`.
+
 ## Settings
 
 Open the add-on's preferences to edit keywords (one per line), toggle whole-word
