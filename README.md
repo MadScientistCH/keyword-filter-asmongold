@@ -44,6 +44,34 @@ Pushing a tag like `v1.0.1` triggers `.github/workflows/release.yml`, which
 The first submission to every store has to be done manually (listing, screenshots,
 privacy answers); afterwards the pipeline publishes updates.
 
+### Setup checklist (one-time)
+
+**Firefox (AMO)**
+- [ ] Log in at addons.mozilla.org and submit the first version manually (creates the listing for the add-on ID in `manifest.json`)
+- [ ] Developer Hub → Tools → Manage API Keys → generate credentials
+- [ ] Save `AMO_JWT_ISSUER` (JWT issuer) and `AMO_JWT_SECRET` (shown only once)
+
+**Chrome Web Store**
+- [ ] Register at the Chrome Web Store Developer Dashboard (one-time 5 USD fee)
+- [ ] Upload and submit the first version manually; the 32-letter extension ID from the URL is `CWS_EXTENSION_ID`
+- [ ] Google Cloud Console: create a project and enable the *Chrome Web Store API*
+- [ ] Configure the OAuth consent screen and set it to *In production* (in *Testing* the refresh token expires after 7 days)
+- [ ] Credentials → create an OAuth client ID of type *Desktop app* → `CWS_CLIENT_ID`, `CWS_CLIENT_SECRET`
+- [ ] Obtain the refresh token (scope `https://www.googleapis.com/auth/chromewebstore`, see the "Obtaining Google API keys" section of `chrome-webstore-upload-cli`) → `CWS_REFRESH_TOKEN`
+
+**Microsoft Edge Add-ons**
+- [ ] Register in the Partner Center for Edge Add-ons (free)
+- [ ] Submit the first version manually; the product GUID is `EDGE_PRODUCT_ID`
+- [ ] Partner Center → Publish API → enable and create a key → `EDGE_CLIENT_ID`, `EDGE_API_KEY`
+- [ ] Renew the API key before it expires (about every 72 days), otherwise the Edge job fails
+
+**Opera Add-ons**
+- [ ] Nothing to configure; upload the `-opera` zip from the GitHub Release at addons.opera.com for each release
+
+**GitHub**
+- [ ] Repository → Settings → Secrets and variables → Actions → add each secret above under exactly that name
+- [ ] Test with a tag, e.g. `git tag v1.0.1 && git push origin v1.0.1`
+
 Local build: `scripts/build.sh` (needs `jq` and `zip`), output in `dist/`.
 
 ## Settings
